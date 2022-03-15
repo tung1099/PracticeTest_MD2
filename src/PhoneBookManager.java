@@ -38,7 +38,7 @@ public class PhoneBookManager {
         Pattern pattern1 = Pattern.compile(EMAIL_REGEX);
         Matcher matcher1 = pattern1.matcher(email);
         if (!matcher1.find()){
-            System.out.println("Số điện thoại không đúng. Mời nhập lại");
+            System.out.println("Email không đúng. Mời nhập lại");
         }
         PhoneBook phoneBook = new PhoneBook(phoneNumber, group, name, gender, address, dateOfBirth, email);
         return phoneBook;
